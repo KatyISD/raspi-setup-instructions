@@ -6,7 +6,7 @@ Plug power into the Pi, either the USBc to USBc adapter from the box we just got
 
 The Pi should start flashing. Give it a bit to boot and then load up PuTTY or your favorite SSH client if you're nerdy enough to have a favorite SSH client. (Yes, I have a favorite, and it's not PuTTY)
 
-    Side note. Don't forget to put the micro SD card into the Pi before turning it on. May be speaking from experience here. 
+> Side note. Don't forget to put the micro SD card into the Pi before turning it on. May be speaking from experience here. 
 
 ## PuTTY
 

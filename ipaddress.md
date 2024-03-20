@@ -26,9 +26,9 @@ The first address, `192.168.1.100` is the IP address you're giving to this pi. I
 
 What I'm doing is using `1xx` for all of mine, with `xx` matching the computer number that Pi is getting used at. So seat 1 will be `192.168.1.101`, seat 2 will be `192.168.1.102` and so on. I'm using the `2xx` range for the desktops in the steps on the next page. 
 
-    A nerdy aside. 
-    
-    The second address is the gateway address. It's not getting used, but does need be be in the same subnet. The third address is the subnet mask.
+> A nerdy aside. 
+>    
+> The second address is the gateway address. It's not getting used, but does need be be in the same subnet. The third address is the subnet mask.
 
 When you're done the file should look like this, again all one one line and with whatever IP you picked for the first one. 
 
