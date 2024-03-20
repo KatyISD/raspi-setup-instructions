@@ -23,7 +23,6 @@
 | | |
 | --- | --- | 
 | [Image the SD card](createimage.md) | |
-| IP Address on the Pi | |
-| Network Adapter | |
-| First Login | |
-| Enabling VNC | |
+| [IP Address on the Pi](./ipaddress.md) | |
+| [Network Adapter](./labnetwork.md) | |
+| [First Login](./firstboot.md) | |
