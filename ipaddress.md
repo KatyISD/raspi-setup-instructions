@@ -19,7 +19,7 @@ We need to add a fixed IP address to the end of that line, making sure it stays 
 What you're adding will look like this.
 
 ```
-ip=192.168.1.100::192.168.1.1:255.255.255.0:rpi:eth0:off
+ip=192.168.1.100::169.254.1.1:255.255.255.0:rpi:eth0:off
 ```
 
 The first address, `192.168.1.100` is the IP address you're giving to this pi. It should start with `192.168.1`. The last octet can be anything between 2 and 254. If you're not ever going to network Pis together you can use the same address for them. 
@@ -28,12 +28,12 @@ What I'm doing is using `1xx` for all of mine, with `xx` matching the computer n
 
 > A nerdy aside. 
 >    
-> The second address is the gateway address. It's not getting used, but does need be be in the same subnet. The third address is the subnet mask.
+> The second address is the gateway address. It's not getting used, and is intionally in an error subnet to make it stand out. The third address is the subnet mask.
 
 When you're done the file should look like this, again all one one line and with whatever IP you picked for the first one. 
 
 ```
-console=serial0,115200 console=tty1 root=PARTUUID=ba3e4f3d-02 rootfstype=ext4 fsck.repair=yes rootwait quiet splash plymouth.ignore-serial-consoles ip=192.168.1.100::192.168.1.1:255.255.255.0:rpi:eth0:off
+console=serial0,115200 console=tty1 root=PARTUUID=ba3e4f3d-02 rootfstype=ext4 fsck.repair=yes rootwait quiet splash plymouth.ignore-serial-consoles ip=192.168.1.100::169.254.1.1:255.255.255.0:rpi:eth0:off
 ```
 
 Save the file, pull the SD card from your computer, and put it into the Pi. We have to [setup the lab computer](./labnetwork.md) before we can boot the Pi. 
