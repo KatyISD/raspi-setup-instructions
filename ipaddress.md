@@ -28,7 +28,7 @@ What I'm doing is using `1xx` for all of mine, with `xx` matching the computer n
 
 > A nerdy aside. 
 >    
-> The second address is the gateway address. It's not getting used, and is intionally in an error subnet to make it stand out. The third address is the subnet mask.
+> The second address is the gateway address. It's not getting used, and is intionally in an error subnet to make it stand out, but it also keeps the pi from trying to use it as a gateway which could cause a conflict. The third address is the subnet mask.
 
 When you're done the file should look like this, again all one one line and with whatever IP you picked for the first one. 
 
